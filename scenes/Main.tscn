@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://l1nbpg0xepsw"]
+
+[ext_resource type="PackedScene" uid="uid://dns3xatgp8sat" path="res://scenes/Player.tscn" id="1_elqb8"]
+
+[sub_resource type="TileSet" id="TileSet_elqb8"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_elqb8")]
+position = Vector2(8, 0)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(2, 2)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+scale = Vector2(1.00923, 0.991105)
+tile_set = SubResource("TileSet_elqb8")
